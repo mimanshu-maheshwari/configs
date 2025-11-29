@@ -1,3 +1,62 @@
 [user]
 	email = maheshwarimimanshu@gmail.com
-	name = mimanshu-maheshwari
+	name = Mimanshu Maheshwari
+
+[github]
+	user = mimanshu-maheshwari
+
+[ui "color"]
+	ui = always
+
+[color]
+	ui = true
+
+[credential]
+	helper = store
+
+# [core]
+# 	autocrlf = input
+# 	safecrlf = true
+
+[commit]
+  tool = vim
+
+[merge]
+	tool = vim -d
+
+[alias]
+	c = commit
+	s = status
+	st = status
+	lg = log --oneline --decorate --graph
+	pl = pull --prune
+	ft = fetch --prune
+	# last = log -1 HEAD
+	# f = push --force-with-lease
+	# # https://stackoverflow.com/a/11688523/472927
+	# ss = "!f() { git stash show stash^{/$*} -p; }; f"
+	# sa = "!f() { git stash apply stash^{/$*}; }; f"
+	# sl = stash list
+
+[help]
+	autocorrect = 1
+# [pull]
+# 	ff = only
+
+# [push]
+# 	default = simple
+
+
+# [url "git@github.com:"]
+# 	insteadOf = gh:
+
+
+# [diff]
+# 	algorithm = patience
+# 	compactionHeuristic = true
+# 
+# [protocol]
+# 	version = 2
+
+[core]
+	editor = vim

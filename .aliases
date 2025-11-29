@@ -1,0 +1,4 @@
+alias ls="eza --hyperlink --color=always --icons=always"
+alias grep="rg --hyperlink-format=kitty"
+alias l="ls -lA"
+alias cd="z"
