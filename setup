@@ -4,10 +4,13 @@
 set -eo pipefail
 
 echo "[+] Running $0 with pid: $$"
+type stow 1>/dev/null 2>&1 || { echo "[!] GNU Stow is required" >&2; exit 1; }
 
-type stow 1>/dev/null 2>&1 || { echo "GNU Stow is required" >&2; exit 1; }
+echo "[+] GNU Stow found. Clearing existing symlink."
+stow -D -t "$HOME" .
 
 # Stow current directory into $HOME
+echo "[+] Creating fresh symlink"
 stow -t "$HOME" .
 
 
