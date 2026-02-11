@@ -70,7 +70,29 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(
+  vi-mode
+  # zoxide
+  kubectl
+  # bower
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  node
+  npm
+  web-search
+  colorize
+  cp
+  pip 
+  python 
+  pyenv 
+  brew 
+  themes 
+  forklift 
+  rust 
+  mvn 
+  colored-man-pages
+)
 
 
 source $ZSH/oh-my-zsh.sh
