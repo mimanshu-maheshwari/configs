@@ -151,7 +151,7 @@ eval "$(pyenv init - bash)"
 # the following to ~/.bashrc:
 
 eval "$(pyenv virtualenv-init -)"
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
 . "$HOME/.cargo/env"
 export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
