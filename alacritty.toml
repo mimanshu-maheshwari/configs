@@ -22,8 +22,7 @@ blur = true
 padding = { x = 10, y = 10 }
 # dimensions = { columns = 120, lines = 30 }
 position = { x = 0, y = 0 }
-# startup_mode = "Fullscreen"
-startup_mode = "SimpleFullscreen"
+startup_mode = "Fullscreen"
 # startup_mode = "Maximized"
 
 [general]
