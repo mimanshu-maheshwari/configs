@@ -86,11 +86,11 @@ plugins=(
   pip 
   python 
   pyenv 
-  brew 
-  themes 
-  forklift 
+  # brew 
+  # themes 
+  # forklift 
   rust 
-  mvn 
+  # mvn 
   colored-man-pages
 )
 
@@ -143,7 +143,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
+eval "$(pyenv init -)"
 
 # Restart your shell for the changes to take effect.
 
