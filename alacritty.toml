@@ -16,14 +16,16 @@ args = [
 ]
 
 [window]
-decorations = "transparent"
-opacity = 0.8
-blur = true
-padding = { x = 10, y = 10 }
-# dimensions = { columns = 120, lines = 30 }
-position = { x = 0, y = 0 }
-startup_mode = "Fullscreen"
-# startup_mode = "Maximized"
+decorations     = "None"
+opacity         = 0.8
+blur            = false # true wont work in windows
+padding         = { x = 10, y = 10 }
+position        = { x = 0, y = 0 }
+startup_mode    = "Fullscreen"
+dynamic_padding = true
+dynamic_title   = true
+# dimensions    = { columns = 120, lines = 30 }
+# startup_mode  = "Maximized"
 
 [general]
 import = ["./base16-alacritty/colors/base16-atelier-forest.toml"]
