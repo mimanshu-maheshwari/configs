@@ -1,3 +1,5 @@
+
+set history=500
 " Don't try to be vi compatible
 set nocompatible
 
@@ -8,6 +10,7 @@ filetype off
 
 " Turn on syntax highlighting
 syntax on
+syntax enable
 
 " For plugins to load correctly
 filetype plugin indent on
@@ -27,20 +30,27 @@ set ruler
 
 " Blink cursor on error instead of beeping (grr)
 set visualbell
+set noerrorbells
+
+set foldcolumn=1
 
 " Encoding
 set encoding=utf-8
 
 " Whitespace
+set ai 
+set si
 set wrap
-set textwidth=79
+set textwidth=80
 set formatoptions=tcqrn1
 
+set smarttab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 set noshiftround
+
 
 " Cursor motion
 set scrolloff=3
@@ -77,10 +87,11 @@ vnoremap / /\v
 set hlsearch
 set incsearch
 set ignorecase
-
 set smartcase
-
 set showmatch
+
+set autoread 
+au FocusGained,BufEnter * silent! checktime
 
 map <leader><space> :let @/=''<cr> " clear search
 
@@ -110,3 +121,10 @@ let g:solarized_termtrans=1
 " put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 " in ~/.vim/colors/ and uncomment:
 " colorscheme solarized
+"
+"
+set nobackup
+set nowb
+set noswapfile
+
+set clipboard=unnamedplus
